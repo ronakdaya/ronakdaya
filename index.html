@@ -241,6 +241,11 @@
     .exp-role { font-size: 14px; color: var(--ink); font-weight: 500; }
     .exp-detail { font-size: 14px; color: var(--soft); margin-top: 8px; max-width: 540px; line-height: 1.65; }
     .exp-year { font-size: 13px; color: var(--soft); white-space: nowrap; padding-top: 2px; font-weight: 500; }
+    @media (max-width: 640px) {
+      .exp-item { grid-template-columns: 1fr; gap: 6px; }
+      .exp-year { order: -1; padding-top: 0; font-size: 12px; }
+      .exp-item:hover { margin: 0 -12px; padding: 22px 12px; }
+    }
 
     .press-chips { display: flex; flex-wrap: wrap; gap: 6px 8px; margin-top: 14px; max-width: 560px; }
     .press-chips a {
