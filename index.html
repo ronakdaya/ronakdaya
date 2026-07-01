@@ -192,6 +192,62 @@
     .link-primary:hover { color: var(--accent); border-color: var(--accent); }
     .link-muted { font-size: 14px; color: var(--muted); text-decoration: none; transition: color .2s; }
     .link-muted:hover { color: var(--ink); }
+    .settle-banner {
+      display: block;
+      margin-top: 30px;
+      max-width: 560px;
+      padding: 16px 18px;
+      color: #FAFAF8;
+      text-decoration: none;
+      border: 1px solid rgba(250,250,248,0.18);
+      border-radius: 8px;
+      background: rgba(250,250,248,0.06);
+      backdrop-filter: blur(8px);
+      transition: transform .2s, border-color .2s, background .2s;
+    }
+    .settle-banner:hover {
+      transform: translateY(-1px);
+      border-color: rgba(250,250,248,0.36);
+      background: rgba(250,250,248,0.09);
+    }
+    .settle-kicker {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(250,250,248,0.58);
+    }
+    .settle-title {
+      display: block;
+      font-family: var(--serif);
+      font-size: 18px;
+      font-style: italic;
+      color: #FAFAF8;
+    }
+    .settle-copy {
+      display: block;
+      margin-top: 5px;
+      font-size: 13px;
+      line-height: 1.55;
+      color: rgba(250,250,248,0.68);
+    }
+    .settle-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(250,250,248,0.12);
+      font-size: 11px;
+      letter-spacing: .03em;
+      color: rgba(250,250,248,0.54);
+    }
+    .settle-stats strong {
+      color: rgba(250,250,248,0.9);
+      font-weight: 500;
+    }
 
     /* ===== HERO STATS (inline) ===== */
     .hero-stats {
@@ -419,6 +475,7 @@
       .highlight-strip .container { gap: 28px; }
       .highlight-number { font-size: 22px; }
       .art-gallery { grid-template-columns: repeat(2, 1fr); }
+      .settle-banner { margin-top: 24px; padding: 15px 16px; }
     }
     /* ===== PROJECT HERO (USDG) ===== */
     .project-hero {
@@ -569,6 +626,16 @@
           <a href="https://linkedin.com/in/ronakdaya" class="link-muted-light" target="_blank">LinkedIn &rarr;</a>
           <a href="https://twitter.com/ronakdaya" class="link-muted-light" target="_blank">X &rarr;</a>
         </div>
+            <a href="https://settle.ronakdaya.com" class="settle-banner" target="_blank">
+              <span class="settle-kicker">checkout settle</span>
+              <span class="settle-title">programmable escrow for agent work</span>
+              <span class="settle-copy">Commit funds upfront, verify a condition, release after proof.</span>
+              <span class="settle-stats">
+                <span><strong>5.9k</strong> requests this week</span>
+                <span><strong>806</strong> x402 discovery hits</span>
+                <span><strong>597</strong> paid endpoint probes</span>
+              </span>
+            </a>
           </div>
           <div class="hero-portrait-side">
             <img src="headshot.jpg" alt="Ronak Daya" />
