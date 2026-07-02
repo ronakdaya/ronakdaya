@@ -192,6 +192,98 @@
     .link-primary:hover { color: var(--accent); border-color: var(--accent); }
     .link-muted { font-size: 14px; color: var(--muted); text-decoration: none; transition: color .2s; }
     .link-muted:hover { color: var(--ink); }
+    .settle-banner {
+      display: block;
+      margin-top: 34px;
+      max-width: 640px;
+      padding: 20px 22px;
+      color: #efe7d4;
+      text-decoration: none;
+      border: 1px solid rgba(200,154,58,0.34);
+      border-left: 4px solid #C89A3A;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(12,12,10,0.9), rgba(20,17,11,0.78));
+      backdrop-filter: blur(8px);
+      transition: transform .2s, border-color .2s, background .2s;
+      box-shadow: 0 22px 58px rgba(0,0,0,0.24);
+    }
+    .settle-banner:hover {
+      transform: translateY(-1px);
+      border-color: rgba(200,154,58,0.62);
+      background: linear-gradient(135deg, rgba(12,12,10,0.96), rgba(20,17,11,0.86));
+    }
+    .settle-brand {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(239,231,212,0.72);
+    }
+    .settle-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      background: #efe7d4;
+      color: #0c0c0a;
+      font-family: var(--sans);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .settle-brand-name { color: #efe7d4; }
+    .settle-kicker {
+      color: #C89A3A;
+    }
+    .settle-title {
+      display: block;
+      font-family: var(--sans);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #efe7d4;
+    }
+    .settle-copy {
+      display: block;
+      margin-top: 7px;
+      font-size: 13px;
+      line-height: 1.55;
+      color: rgba(239,231,212,0.72);
+    }
+    .settle-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin-top: 14px;
+      padding-top: 13px;
+      border-top: 1px solid rgba(239,231,212,0.12);
+      font-size: 11px;
+      letter-spacing: .03em;
+      color: rgba(239,231,212,0.52);
+    }
+    .settle-stats strong {
+      color: #C89A3A;
+      font-weight: 500;
+    }
+    .settle-feedback {
+      display: block;
+      margin-top: 14px;
+      padding-top: 13px;
+      border-top: 1px solid rgba(239,231,212,0.12);
+      font-size: 12px;
+      letter-spacing: .02em;
+      color: rgba(239,231,212,0.58);
+    }
+    .settle-feedback strong {
+      color: #C89A3A;
+      font-weight: 500;
+    }
 
     /* ===== HERO STATS (inline) ===== */
     .hero-stats {
@@ -419,6 +511,7 @@
       .highlight-strip .container { gap: 28px; }
       .highlight-number { font-size: 22px; }
       .art-gallery { grid-template-columns: repeat(2, 1fr); }
+      .settle-banner { margin-top: 24px; padding: 15px 16px; }
     }
     /* ===== PROJECT HERO (USDG) ===== */
     .project-hero {
@@ -569,6 +662,12 @@
           <a href="https://linkedin.com/in/ronakdaya" class="link-muted-light" target="_blank">LinkedIn &rarr;</a>
           <a href="https://twitter.com/ronakdaya" class="link-muted-light" target="_blank">X &rarr;</a>
         </div>
+            <a href="https://settle.ronakdaya.com" class="settle-banner" target="_blank">
+              <span class="settle-brand"><span class="settle-mark">⊢</span><span class="settle-brand-name">settle</span></span>
+              <span class="settle-title">programmable escrow for agent work</span>
+              <span class="settle-copy">Commit funds upfront, verify a condition, release after proof.</span>
+              <span class="settle-feedback">Check it out and share feedback at <strong>hi@ronakdaya.com</strong>.</span>
+            </a>
           </div>
           <div class="hero-portrait-side">
             <img src="headshot.jpg" alt="Ronak Daya" />
